@@ -1,9 +1,4 @@
-<?php require_once "./inc/head.php"; ?>
-<?php require_once "inc/header.php"; ?>
-
-
 <body>
-    <body>
         <main id="main">
         </main>
         <section id="footer">
@@ -13,7 +8,6 @@
                 </div>
             </footer>
         </section>
-    </body>
 </body>
 
 </html>

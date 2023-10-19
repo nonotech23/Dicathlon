@@ -7,7 +7,6 @@
     <title></title>
 
     <!-- <link rel="stylesheet" href="CSS/style.css"> -->
-    <link rel="stylesheet" href="CSS/style-general.css">
-    <link rel="stylesheet" href="CSS/style-accueil.css">
+    <link rel="stylesheet" href="<?php echo(base_url());?>CSS/style-accueil.css">
 
 </head>
