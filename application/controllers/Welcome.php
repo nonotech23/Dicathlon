@@ -6,7 +6,10 @@ class Welcome extends CI_Controller {
     public function __construct(){
         parent::__construct();
 		$this->load->view('head');
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     }
 
     public function index(){
