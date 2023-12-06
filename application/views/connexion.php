@@ -5,12 +5,12 @@
         <div class="connexion-container">
             <h2 class="connexion-text">Formulaire de Connexion</h2>
 
-            <form action="votre_action_de_formulaire" method="post">
+            <form action="<?php echo(site_url("Utilisateur/verif_connexion")); ?>" method="post">
                 <label for="username">Nom d'utilisateur :</label>
-                <input type="text" id="username" name="username" required placeholder="Nom d'utilisateur">
+                <input type="text" id="login" name="login" required placeholder="Nom d'utilisateur">
 
                 <label for="password">Mot de passe :</label>
-                <input type="password" id="password" name="password" required placeholder="Mot de passe">
+                <input type="password" id="motdepasse" name="password" required placeholder="Mot de passe">
                 <a href="" class="oublié">
                     Mot de passe oublié
                 </a>
