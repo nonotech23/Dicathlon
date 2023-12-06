@@ -1,0 +1,48 @@
+img {
+  max-width: 100%;
+}
+
+body {
+  background: #f2f2f2;
+  font-family: "Lato";
+}
+
+.container-2 {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1500px;
+  padding: 0 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#slider-carou {
+  padding: 0 30px;
+  display: none;
+}
+#slider-carou.slick-initialized {
+  display: block;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  background: none;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  color: #000;
+}
+.slick-arrow:hover, .slick-arrow:focus, .slick-arrow:active {
+  color: #ff5252;
+  outline: 0;
+}
+.slick-arrow.slick-prev {
+  left: 0;
+}
+.slick-arrow.slick-next {
+  right: 0;
+}/*# sourceMappingURL=style-carroussel.css.map */

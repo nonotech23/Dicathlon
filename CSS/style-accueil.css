@@ -17,7 +17,7 @@ html {
 	scroll-behavior: smooth;
 	font-family: Poppins, sans-serif;
 	font-weight: 300;
-	color: #F5F5F5;
+	/* color: #F5F5F5; */
 }
 
 a{
@@ -48,6 +48,7 @@ body {
 	background-size: cover;
     min-height: 100vh;
     position: relative;
+    width: 100%;
 }
 
 main{
