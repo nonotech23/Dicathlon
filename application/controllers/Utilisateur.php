@@ -6,6 +6,7 @@ class Utilisateur extends CI_Controller {
     public function __construct(){
         parent::__construct();
 		$this->load->view('head');
+        $this->load->model('Internships_model');
     }
 
     public function connexion(){
@@ -29,6 +30,8 @@ class Utilisateur extends CI_Controller {
             else{
                 $this->load->view('header');
             }
+            $data['produits']=$this->Internships_model->get_produits();
+            $this->load->vars($data);
             $this->load->view('accueil');
         } else {
             $this->load->view('header-co');
