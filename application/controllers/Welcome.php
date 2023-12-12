@@ -14,6 +14,11 @@ class Welcome extends CI_Controller {
         $this->load->view('sports');
     }
 
+    public function description(){
+		$this->load->view('header');
+        $this->load->view('description');
+    }
+
     public function listeproduitmarque($m){
 		$this->load->view('header');
         $data['produits']=$this->Internships_model->get_models_by_marque($m);

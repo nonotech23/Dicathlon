@@ -14,6 +14,12 @@ class Utilisateur extends CI_Controller {
         $this->load->view('connexion');
     }
 
+    
+    public function description(){
+		$this->load->view('header');
+        $this->load->view('description');
+    }
+
     public function verif_connexion(){
         $this->load->model("Utilisateur_model");
     
