@@ -14,16 +14,27 @@ class Welcome extends CI_Controller {
         $this->load->view('sports');
     }
 
+    public function listeproduitmarque($m){
+		$this->load->view('header');
+        $data['produits']=$this->Internships_model->get_models_by_marque($m);
+        $data['title']='produits';
+        $this->load->vars($data );
+        $this->load->view('listeproduitmarque');
+        
+    }
+    
 
-        public function index(){
-            $this->load->view('header');
-            $data['produits']=$this->Internships_model->get_produits();
-            // a title to display above the list
-            $data['title']='accueil';
-            // template will call 'task_list ' sub - view
-            $this->load->vars($data );
-            $this->load->view('accueil');
-        }
+
+    public function index(){
+        $this->load->view('header');
+        $data['produits']=$this->Internships_model->get_produits();
+        // a title to display above the list
+        $data['title']='accueil';
+        // template will call 'task_list ' sub - view
+        $this->load->vars($data );
+        $this->load->view('accueil');
+    }
+    
 }
 
 
