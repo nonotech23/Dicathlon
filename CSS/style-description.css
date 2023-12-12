@@ -1,0 +1,23 @@
+
+
+.main-description{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #F2F2F0;
+}
+
+.photo1{
+    width: 45%;
+    margin-left: 5%;
+    height: 1000px;
+    background-color: white;
+}
+
+.description{
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: red;
+}
