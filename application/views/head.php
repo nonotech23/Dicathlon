@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="<?php echo(base_url());?>CSS/style-accueil.css">
     <link rel="stylesheet" href="<?php echo(base_url());?>CSS/style-connexion.css">
     <link rel="stylesheet" href="<?php echo(base_url());?>CSS/style-sports.css">
+    <link rel="stylesheet" href="<?php echo(base_url());?>CSS/style-description.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- Ajout des liens vers jQuery et Slick Slider -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />

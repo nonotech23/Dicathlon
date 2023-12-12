@@ -1,4 +1,5 @@
 <body id="connexion-bg">
+<body id="connexion-bg">
     <main id="main-co">
         <!-- Dans votre fichier connexion.php -->
 
@@ -11,14 +12,8 @@
 
                 <label for="password">Mot de passe :</label>
                 <input type="password" id="motdepasse" name="password" required placeholder="Mot de passe">
-                <a href="" class="oublié">
-                    Mot de passe oublié
-                </a>
                 <div class="buttons-co">
-                    <button type="submit">Se connecter</button>
-                    <a href="<?php echo(site_url()); ?>/Utilisateur/creercompte">
-                        <p>Créer mon compte</p>
-                    </a>
+                    <button type="submit">Créer mon compte</button>
                 </div>
             </form>
 
@@ -33,6 +28,9 @@
             </div>
         </footer>
     </section>
+</body>
+
+</html>
 </body>
 
 </html>
