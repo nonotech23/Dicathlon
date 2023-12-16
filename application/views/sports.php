@@ -24,7 +24,7 @@
     </div>
     <div class="container-2">
         <div id="slider-carou">
-            <div class="slide">
+            <div class="">
                 <img src="http://placehold.it/250x250/000/fff" alt="IMAGE SPORT" />
                 <div class="titre-sport">
                     <h4>TITRE SPORT</h4>
@@ -74,9 +74,4 @@
             </div>
         </div>
     </div>
-</body>
-
-</html>
-
-
 </body>
