@@ -15,7 +15,6 @@ class Utilisateur extends CI_Controller {
     }
 
     public function description(){
-		$this->load->view('header');
         $this->load->view('description');
     }
 
@@ -35,14 +34,13 @@ class Utilisateur extends CI_Controller {
     
         if ($a != null) {
             if ($type_utilisateur == 'admin'){
-                $this->load->view('header-admin');
+                $this->load->view('accueil_admin');
             }
             else{
-                $this->load->view('header');
+                $this->load->view('accueil_client');
             }
             $data['produits']=$this->Internships_model->get_produits();
             $this->load->vars($data);
-            $this->load->view('accueil');
         } else {
             $this->load->view('header-co');
             $this->load->view('connexion', ['erreur' => 'Identifiants invalides']);
@@ -66,11 +64,26 @@ class Utilisateur extends CI_Controller {
             $data['produits']=$this->Internships_model->get_produits();
             $this->load->vars($data);
 
-            $this->load->view('header');
-            $this->load->view('accueil');
+            $this->load->view('accueil_clients');
 
         } else {
             $this->load->view('creercompte');
+        }
+    }
+
+    public function ajouter_article() {
+        if ($this->input->post()) {
+            $data = array(
+                'type' => $this->input->post('type'),
+                'description' => $this->input->post('description'),
+                'marque' => $this->input->post('marque'),
+                'modele' => $this->input->post('modele'),
+                'prix_location' => $this->input->post('prix_location'),
+                'etat' => $this->input->post('etat'),
+            );
+
+            $this->db->insert('produit', $data);
+            $this->load->view('ajouter');
         }
     }
 

@@ -10,13 +10,31 @@ class Welcome extends CI_Controller {
     }
 
 	public function sports(){
-		$this->load->view('header');
         $this->load->view('sports');
     }
 
+    public function sports_clients(){
+        $this->load->view('sports_clients');
+    }
+
+    public function sports_admin(){
+        $this->load->view('sports_admin');
+    }
+
     public function description(){
-		$this->load->view('header');
         $this->load->view('description');
+    }
+
+    public function description_clients(){
+        $this->load->view('description_clients');
+    }
+
+    public function description_admin(){
+        $this->load->view('description_admin');
+    }
+
+    public function ajouter(){
+        $this->load->view('ajouter');
     }
 
     public function listeproduitmarque($m){
@@ -28,10 +46,7 @@ class Welcome extends CI_Controller {
         
     }
     
-
-
     public function index(){
-        $this->load->view('header');
         $data['produits']=$this->Internships_model->get_produits();
         // a title to display above the list
         $data['title']='accueil';
