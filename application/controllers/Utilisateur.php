@@ -70,6 +70,7 @@ class Utilisateur extends CI_Controller {
             $this->load->view('creercompte');
         }
     }
+    
 
     public function ajouter_article() {
         if ($this->input->post()) {

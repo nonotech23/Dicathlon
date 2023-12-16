@@ -13,12 +13,9 @@ class Internships_model extends CI_Model {
     public function get_marques() {
         $query = $this->db->query("SELECT DISTINCT marque FROM produit ORDER BY marque");
         
-        // Vérifier si la requête a réussi
         if ($query) {
-            // Renvoyer les résultats sous forme de tableau associatif
             return $query->result_array();
         } else {
-            // Gérer les erreurs si la requête échoue
             return array();
         }
     }
@@ -31,6 +28,11 @@ class Internships_model extends CI_Model {
         } else {
             return array();
         }
+    }
+
+    public function get_produit_par_id($id) {
+        $query = $this->db->get_where('produit', array('id' => $id));
+        return $query->row_array();
     }
 }
 ?>
